@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+nav ul, navl ol{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3, p, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* end reset and begin normal styling */
+
+body{
+    background-image: url(images/backg.png);
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
