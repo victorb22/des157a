@@ -32,41 +32,79 @@ header{
 
 header h1{
     font-family: "Jersey 10", sans-serif;
+    font-size: 3em;
+    padding-top: 130px;
+    font-weight: 400;
 }
 
 header h2{
     color: white;
-    padding-top: 2em;
+    padding-top: 15px;
     font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 1.25em;
 }
 
 nav ul li a{
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    color: white;
+    text-align: center;
 }
 
 nav ul li{
-    padding-top: 20px;
-
+    background-color: #1e77bc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 #fournav{
     display: flex;
-    gap: 40px;
+    gap: 45px;
     justify-content: center;
     padding-top: 50px;
 }
 
 .navblock{
     line-height: 2em;
-    padding: 20px;
+    padding: 35px;
     background-color: #99D3FF;
     border-radius: 30px;
-    width: 250px;
-    height: 333px;
+    width: 275px;
+    height: 450px;
     flex-shrink: 0;
 }
 
 .navblock h2{
     color: white;
     font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 40px;
 }
+
+#closed{
+
+}
+
+.circ{
+    transform: translateY(-50px);
+}
+
+#open{
+    
+}
+
+#port{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    /* z-index */
+}
+
