@@ -30,6 +30,12 @@ header{
     text-align: center;
 }
 
+#banner{
+    width: 1100px;
+    height: 250px;
+    /* backgorund color */
+}
+
 header h1{
     font-family: "Jersey 10", sans-serif;
     font-size: 3em;
@@ -45,6 +51,30 @@ header h2{
     font-size: 1.25em;
 }
 
+footer{
+    padding: 30px;
+    padding-top: 150px;
+
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    p{
+        padding-bottom: 20px;
+    }
+}
+
+#container{
+    width: 80%; 
+    max-width: 1200px; 
+    margin: auto; 
+}
+
 nav ul li a{
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -54,8 +84,9 @@ nav ul li a{
 }
 
 nav ul li{
-    background-color: #1e77bc;
-    border-radius: 10px;
+    background: #99D3FF;
+
+border-radius: 10px;
     padding: 10px;
     margin: 10px;
     margin-top: 25px;
@@ -64,18 +95,18 @@ nav ul li{
 
 #fournav{
     display: flex;
-    gap: 45px;
+    gap: 30px;
     justify-content: center;
     padding-top: 50px;
 }
 
 .navblock{
     line-height: 2em;
-    padding: 35px;
-    background-color: #99D3FF;
+    padding: 10px;
+    background: rgba(49, 183, 255, 0.60);
     border-radius: 30px;
-    width: 275px;
-    height: 450px;
+    width: 260px;
+    height: 435px;
     flex-shrink: 0;
 }
 
@@ -86,6 +117,7 @@ nav ul li{
     text-align: center;
     font-size: 2.25em;
     margin-bottom: 40px;
+    padding-top: 20px;
 }
 
 #closed{
