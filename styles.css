@@ -1,23 +1,11 @@
-*{
+* {
     box-sizing: border-box;
-}
-
-nav ul, navl ol{
-    list-style-type: none;
-}
-
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 h1, h2, h3, p, ul, ol{
     margin: 0;
     padding: 0;
 }
-
-/* end reset and begin normal styling */
 
 body{
     background-image: url(images/backg.png);
@@ -42,7 +30,6 @@ header h1{
     font-size: 3em;
     padding-top: 130px;
     font-weight: 400;
-    /* position: relative; */
     z-index: 2;
 }
 
@@ -52,7 +39,6 @@ header h2{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 1.25em;
-    /* position: relative; */
     z-index: 2;
 }
 
@@ -76,6 +62,10 @@ footer{
 #container{
     width: 80%; 
     margin: auto; 
+}
+
+nav ul{
+    list-style-type: none;
 }
 
 nav ul li a{
@@ -170,7 +160,11 @@ nav ul li:hover{
     animation: closePortal 4s infinite;
     top: 0;
     left: calc(50% - 150px);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+
 
 @keyframes openPortal {
     0%, 100% {
