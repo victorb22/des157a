@@ -9,7 +9,7 @@ h1, h2, h3, p, ul, ol{
 
 header{
     max-width: max-content;
-    padding-top: 450px;
+    padding-top: 500px;
 }
 
 body{
@@ -48,7 +48,7 @@ p{
     line-height: 1.6em;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: .9em;
     margin-top: 20px;
     color: black;
 }
