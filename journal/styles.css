@@ -68,9 +68,10 @@ article{
     border-style: solid;
     border-color: #06402b;
     border-width: .65em;
-    margin-top: 90px;
+    margin-top: 200px;
     padding-top: 25px;
     padding-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 article h2{
