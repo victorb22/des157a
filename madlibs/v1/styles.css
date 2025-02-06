@@ -24,12 +24,12 @@ span{
     font-weight: bold;
 }
 
-form input, form label {
+form input, form label{
     display: block;
 }
 
-form input {
-    margin-bottom: 1em;
+form input, form select{
+    margin-bottom: .5em;
 }
 
 #qmark1{
@@ -55,17 +55,20 @@ form{
 
 #form {
     box-sizing: border-box;
-    width: 400px;
-    padding: 40px;
+    color: white;
+    padding: 30px;
     border-radius: 40px;
     border: 20px solid #FFF;
     background: #0B1984;
-    width: 500px;
-    height: 650px;
+    width: 550px;
+    height: 750px;
     margin-left: 350px;
+    margin-top: 20px;
     h2{
         font-family: 'Poppins', 'sans-serif';
         font-size: 1.5em;
+        padding-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -78,7 +81,6 @@ form{
     background: #FFF;
     margin-top: 1.5em;
     transform: translateX(53.5%)translateY(-100%);
-
 }
 
 section {
@@ -97,6 +99,14 @@ main {
     height: calc(100vh - 250px);
 }
 
+input[type="text"]{
+    border-radius: 15px;
+}
+
+select, select:focus, select option{
+    border-radius: 15px;
+}
+
 input[type="radio"] {
     appearance: none;
     width: 25px;
@@ -112,11 +122,29 @@ input[type="radio"]:checked {
     border: 12.5px solid rgb(70, 197, 44);
 }
 
+input[type="submit"] {
+    padding: .75em;
+    margin-top: 10px;
+    width: 400px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: deeppink;
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+input[type="submit"]:active {
+    background-color: rgb(161, 0, 64);
+}
+
 /* change display flex/none between input and results to show form and results pages */
 
 #input{
     background-color: none;
-    display: none;
+    display: flex;
 
     justify-content: center;
     width: 1200px;
@@ -129,6 +157,8 @@ input[type="radio"]:checked {
 
 #results{
     background-color: none; 
+    display: none;
+
 
 }
 
