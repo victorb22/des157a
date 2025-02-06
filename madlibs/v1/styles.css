@@ -119,13 +119,13 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
     outline: none;
-    border: 12.5px solid rgb(70, 197, 44);
+    border: 12.5px solid #FFAE11;
 }
 
 input[type="submit"] {
     padding: .75em;
     margin-top: 10px;
-    width: 400px;
+    width: 450px;
     border: 0;
     border-radius: 5px;
     font-weight: bold;
@@ -137,7 +137,7 @@ input[type="submit"]:hover {
 }
 
 input[type="submit"]:active {
-    background-color: rgb(161, 0, 64);
+    background-color: #FFAE11;
 }
 
 /* change display flex/none between input and results to show form and results pages */
