@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expirement 1</title>
+</head>
+
+<body>
+    <h1>Expirement 1</h1>
+    <h2>press command + option + j to interact with the code</h2>
+
+    <script>
+        //I am trying to make my program take a lowercase string from prompting the user and then return it with the first letter of each word capitalized.  
+        var statement = prompt('Please enter a string in lowercase:', '');
+        var text1 = statement.split(" "); // selection
+
+        for(i = 0; i < statement.length; i++){ // loop
+            text1[i] = text1[i][0].toUpperCase(); // sequence
+            console.log(text1[i]); // sorry i did not have time to figure this out :(
+        }
+
+    </script>
+
+</body>
+</html>

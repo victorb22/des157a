@@ -1,0 +1,169 @@
+* {
+    /* box-sizing: border-box; */
+}
+
+#input h1{
+    font-family: 'Lilita One', 'sans-serif';
+    font-size: 7em;
+    color: white;
+    line-height: .5;
+}
+
+h2{
+    font-family: 'Poppins', 'sans-serif';
+    text-align: center;
+    padding-top: 20px;
+}
+
+body{
+    background-image: url(./images/backGr-madL.png);
+    background-size: cover;
+}
+
+span{
+    font-weight: bold;
+}
+
+form input, form label{
+    display: block;
+}
+
+form input, form select{
+    margin-bottom: .5em;
+}
+
+#qmark1{
+    padding-left: 222px;
+    transform: translateY(150px);
+}
+
+#qmark2{
+    transform: rotate(165deg);
+}
+
+#qmark3{
+    transform: translateX(955px)rotate(15deg);
+}
+
+#qmarks{
+    h2{
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+form{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1em;
+}
+
+#form {
+    box-sizing: border-box;
+    color: white;
+    padding: 30px;
+    border-radius: 40px;
+    border: 20px solid #FFF;
+    background: #0B1984;
+    width: 550px;
+    height: 750px;
+    margin-left: 350px;
+    margin-top: 20px;
+    h2{
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 1.5em;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+#output{
+    box-sizing: border-box;
+    width: 700px;
+    padding: 40px;
+    border-radius: 40px;
+    border: 20px solid #0B1984;
+    background: #FFF;
+    margin-top: 1.5em;
+    transform: translateX(53.5%)translateY(-100%);
+}
+
+section {
+    /* display: flex;
+    justify-content: center;
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+}
+
+main {
+    position: relative;
+    height: calc(100vh - 250px);
+}
+
+input[type="text"]{
+    border-radius: 15px;
+}
+
+select, select:focus, select option{
+    border-radius: 15px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    outline: none;
+    transition: 0.2s all linear;
+}
+
+input[type="radio"]:checked {
+    outline: none;
+    border: 12.5px solid #FFAE11;
+}
+
+input[type="submit"] {
+    padding: .75em;
+    margin-top: 10px;
+    width: 450px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: deeppink;
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+input[type="submit"]:active {
+    background-color: #FFAE11;
+}
+
+/* change display flex/none between input and results to show form and results pages */
+/* issue here i think - i am using display flex instead of block and none, not sure if that is the issue */
+#input{
+    background-color: none;
+    display: none;
+
+    justify-content: center;
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#results{
+    background-color: none; 
+    display: all;
+
+
+}
+
+
