@@ -18,7 +18,7 @@
         const name = document.querySelector('#name').value;
         const noun = document.querySelector('#noun').value;
         const verb = document.querySelector('#verb').value;
-        const number = document.querySelector('#number').value;
+        const number = document.querySelector('input[name="number"]:checked')?.value || '';
         const plnoun = document.querySelector('#plnoun').value;
         const urname = document.querySelector('#urname').value;
         const farewell = document.querySelector('#farewell').value;
@@ -60,7 +60,7 @@
             errorMessage.innerHTML = myText;  //error message
         }
         else {
-            myText =  `<p><span>${greeting}</span> <span>${name}</span>,</p>
+            myText =  `<p class="top"><strong>You</strong></p> <p class="top">${name}</p> <p><span>${greeting}</span> <span>${name}</span>,</p>
             <p> I’m so sorry, but I won’t be able to make it today! I was just making 
                 my way out when my <span>${noun}</span> began to break down. Luckily, I was close. But 
                 to make matters worse, as I was in the middle of <span>${verb}</span> my way inside, 
@@ -72,7 +72,7 @@
                         document.querySelector('#name').value = '';
                         document.querySelector('#noun').value = '';
                         document.querySelector('#verb').value = '';
-                        document.querySelector('#verb').value = '';
+                        document.querySelector('#plnoun').value = '';
                         document.querySelector('#number').value = '';
                         document.querySelector('#farewell').value = '';
                         document.querySelector('#urname').value = '';
