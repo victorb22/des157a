@@ -16,6 +16,12 @@ header{
     position: fixed;
 }
 
+img{
+    margin-top: 15px;
+    /* width: 100%;
+    height: auto; */
+}
+
 body{
     background-size: cover;
     background-color: #FFFDF2;
@@ -67,7 +73,7 @@ main{
 article{
     background-color: whitesmoke;
     padding: 20px;
-    max-width: fit-content;
+    max-width: 600px;
     /* flex: 2; */
     margin-left: 150px;
     border-radius: 30px;
