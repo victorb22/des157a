@@ -1,0 +1,26 @@
+/* #one{
+    transform: translateX(100px);
+    background-color: aqua;
+    padding: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    display: block;
+} */
+
+
+
+/* body{
+    text-align: center;
+    background-image: url(im);
+    background-size: cover;
+} */
+
+body{
+    position: relative;
+    background-color: aqua;
+}
+
+.sections{
+    position: absolute;
+}
