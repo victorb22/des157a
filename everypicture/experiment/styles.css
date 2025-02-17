@@ -69,6 +69,7 @@ body {
     left: 0;
     border-radius: 35px;
     transform: rotateX(95deg);
+    filter: hue-rotate(90deg);
 }
 
 .topr {
@@ -76,6 +77,7 @@ body {
     left: 0;
     border-radius: 35px;
     transform: rotateX(85deg);
+    filter: hue-rotate(90deg);
 }
 
 .botl {
