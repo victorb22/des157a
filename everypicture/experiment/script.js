@@ -5,22 +5,27 @@
     const container = document.querySelector('#container');
     const spots = document.querySelectorAll('#container div');
     const pic = document.querySelector('div img');
-    const hider = document.querySelector('#hideme');
-
+    const open = document.querySelector('#open'); 
 
     spots.forEach(function(eachSpot){
-        eachSpot.addEventListener('mouseover', effect);
+        eachSpot.addEventListener('click', effect);
     });
 
     function effect(event){
+        event.preventDefault();
         const thisCorner = event.target.id;
         console.log(thisCorner);
         switch (thisCorner){
-            case 'topl': pic.className = 'topl'; break;
-            case 'topr': pic.className = 'topr'; break;
-            case 'botl': pic.className = 'botl'; break;
-            case 'botr': pic.className = 'botr'; break;
-            case 'center': pic.className = 'center'; break;
+            case 'topl': open.className = 'showing'; break;
+            case 'topr': open.className = 'showing'; break;
+            case 'botl': open.className = 'showing'; break;
+            case 'botr': open.className = 'showing'; break;
+            case 'center': open.className = 'showing'; break;
         };
+
+        document.querySelector('.close').addEventListener('click', function(event){
+            event.preventDefault();
+            document.querySelector('#open').className = 'hidden';
+        })
     };
 }());

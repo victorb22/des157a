@@ -13,38 +13,29 @@
 </head>
 
 <body>
+    <h1>Hello every picture experiment</h1>
+    <h2>Click on bottom left or right, top right or left, and center of the image below to open overlay content.</h2>
 
-    <h1>hello every picture experiment</h1>
-
-    <div id="container">
-        <img src="./images/expPic1.png" alt="bedroom furniture" class="start">
+    <section id="container">
+         <img src="./images/expPic1.png" alt="bedroom furniture" class="start">
         <div id="topl"></div>
         <div id="topr"></div>
         <div id="botl"></div>
         <div id="botr"></div>
         <div id="center"></div>
-    </div>
+    </section>
 
-    <!-- https://www.w3schools.com/css/css_positioning.asp -->
+    <section id="open" class="hidden">
+        <article>
+        <h2>Location: Home</h2>
+        <img src="./images/pic2.png" alt="pic" width="200" height="200">
+        <p>
+            This picture is a painting my brother made and put up in our childhood bedroom that we shared.
+        </p>
 
-    <!-- 
-    <article id="area">
-        
-        <div id="one" class="hidden">
-        </div>
-
-        <section id="two" class="hidden">
-            <h1>this is a section</h1>
-        </section>
-
-        <section id="three" class="hidden">
-            <h1>this is a section</h1>
-        </section>
-
-        <section id="four" class="hidden">
-            <h1>this is a section</h1>
-        </section>
-    </article> -->
+        <button class="close">close</button>
+        </article>
+    </section>
 
 </body>
 </html>
