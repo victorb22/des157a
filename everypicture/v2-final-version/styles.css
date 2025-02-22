@@ -122,6 +122,12 @@ div img{
     background-color: rgba(0,0,0,.5);
 }
 
+#open2 h2{
+    color: #1792f2;
+    font-family: 'Luxurious Script', 'serif';
+    font-size: 3em;
+}
+
 #open2 article{
     position: absolute;
     top: 50%;
@@ -160,7 +166,8 @@ div img{
     box-sizing: border-box;
     padding: 50px;
     padding-top: 20px;
-    background-color: red;
+    background-color: white;
+    border: 15px solid #3ef24e;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
 }
@@ -183,7 +190,8 @@ div img{
     box-sizing: border-box;
     padding: 50px;
     padding-top: 20px;
-    background-color: red;
+    background-color: white;
+    border: 15px solid #f23636;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
 }
@@ -206,7 +214,8 @@ div img{
     box-sizing: border-box;
     padding: 50px;
     padding-top: 20px;
-    background-color: red;
+    background-color: white;
+    border: 15px solid #ef6720;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
 }
