@@ -90,7 +90,6 @@
         
         let currentpic = 0;
         const pin1 = ['./images/pin1-image1.png', './images/pin1-image2.png', './images/pin1-image3.png', './images/pin1-image4.png', './images/pin1-image5.png'];
-        // const container = document.getElementById('pics1');
         const nextBtn = document.getElementById('next');
         const prevBtn = document.getElementById('prev');
 
@@ -101,7 +100,6 @@
             if(currentpic > pin1.length - 1){
                 currentpic = 0;
             }
-            // swapImage();
             document.getElementById('gettingTh').src = pin1[currentpic];
         })
 
@@ -113,18 +111,33 @@
                  currentpic = pin1.length - 1; 
             }
     
-            // swapImage();
             document.getElementById('gettingTh').src = pin1[currentpic];
         });
+
+        let currentpic2 = 0;
+        const pin2 = ['./images/pin2-image1.png', './images/pin2-image2.png', './images/pin2-image3.png'];
+        const nextBtn2 = document.getElementById('next2');
+        const prevBtn2 = document.getElementById('prev2');
+
+        nextBtn2.addEventListener('click', function(e){
+            e.preventDefault();
+
+            currentpic2++;
+            if(currentpic2 > pin2.length - 1){
+                currentpic2 = 0;
+            }
+            document.getElementById('gettingTh2').src = pin2[currentpic2];
+        })
+
+        prevBtn2.addEventListener('click', function(e){
+            e.preventDefault();
     
-        // function swapImage() {
-        //     const newSlide = document.createElement('img');
-        //     newSlide.src = `${pin1[currentImage]}`;
-        //     // newSlide.className = "fadeinimg";
-        //     container.appendChild(newSlide);
+            currentpic2--;
+            if (currentpic2 < 0){
+                 currentpic2 = pin2.length - 1; 
+            }
     
-        //     if (container.children.length > 2) {
-        //         container.removeChild(container.children[0]);
-        //     }
-        // }        
+            document.getElementById('gettingTh2').src = pin2[currentpic2];
+        });
+           
 }());

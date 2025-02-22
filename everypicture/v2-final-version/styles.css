@@ -16,6 +16,41 @@ body {
     color: black;
 }
 
+p{
+    font-family: 'Poppins', 'sans-serif';
+    margin-top: 30px;
+    width: 590px;
+}
+
+.nav{
+    width: 590px;
+	display: flex;
+    margin-top: 0;
+}
+
+.nav a {
+	display: block;
+	flex: 1;
+	background: black;
+	height: 50px;
+	line-height: 50px;
+	color: #D5D5D5;
+	text-decoration: none;
+	font-family: 'Poppins', 'sans-serif';
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#nav1 a:hover {
+	background: #E4007C;
+	color: #fff;
+}
+
+#nav2 a:hover {
+	background: #1792f2;
+	color: #fff;
+}
+
 #container {
     width: 800px;
     height: 855px;
@@ -28,6 +63,10 @@ body {
 img{
     width: 100%;
     display: block;
+}
+
+div img{
+    width: 590px;
 }
 
 #container div {
@@ -52,6 +91,12 @@ img{
     background-color: rgba(0,0,0,.5);
 }
 
+#open h2{
+    color: #E4007C;
+    font-family: 'Luxurious Script', 'serif';
+    font-size: 3em;
+}
+
 #open article{
     position: absolute;
     top: 50%;
@@ -60,15 +105,13 @@ img{
     height: 70vh;
     box-sizing: border-box;
     padding: 50px;
+    padding-top: 20px;
     background-color: white;
     border: 15px solid #E4007C;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
 }
 
-#open h2{
-    color: #E4007C;
-}
 
 #open2{
     position: absolute;
@@ -86,8 +129,11 @@ img{
     width: 50vw;
     height: 70vh;
     box-sizing: border-box;
-    padding: 70px;
+    padding: 50px;
+    padding-right: 10px;
+    padding-top: 20px;
     background-color: white;
+    border: 15px solid #1792f2;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
 }
@@ -112,7 +158,8 @@ img{
     width: 50vw;
     height: 70vh;
     box-sizing: border-box;
-    padding: 70px;
+    padding: 50px;
+    padding-top: 20px;
     background-color: red;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
@@ -134,7 +181,8 @@ img{
     width: 50vw;
     height: 70vh;
     box-sizing: border-box;
-    padding: 70px;
+    padding: 50px;
+    padding-top: 20px;
     background-color: red;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
@@ -156,7 +204,8 @@ img{
     width: 50vw;
     height: 70vh;
     box-sizing: border-box;
-    padding: 70px;
+    padding: 50px;
+    padding-top: 20px;
     background-color: red;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
