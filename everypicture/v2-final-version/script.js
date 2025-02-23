@@ -27,27 +27,27 @@
             case 'center': open5.className = 'showing'; break;
         };
 
-        document.querySelector('.close').addEventListener('click', function(event){
+        document.querySelector('#close1').addEventListener('click', function(event){
             event.preventDefault();
             document.querySelector('#open').className = 'hidden';
         })
 
-        document.querySelector('.close2').addEventListener('click', function(event){
+        document.querySelector('#close2').addEventListener('click', function(event){
             event.preventDefault();
             document.querySelector('#open2').className = 'hidden';
         })
 
-        document.querySelector('.close3').addEventListener('click', function(event){
+        document.querySelector('#close3').addEventListener('click', function(event){
             event.preventDefault();
             document.querySelector('#open3').className = 'hidden';
         })
 
-        document.querySelector('.close4').addEventListener('click', function(event){
+        document.querySelector('#close4').addEventListener('click', function(event){
             event.preventDefault();
             document.querySelector('#open4').className = 'hidden';
         })
 
-        document.querySelector('.close5').addEventListener('click', function(event){
+        document.querySelector('#close5').addEventListener('click', function(event){
             event.preventDefault();
             document.querySelector('#open5').className = 'hidden';
         })
@@ -115,7 +115,7 @@
         });
 
         let currentpic2 = 0;
-        const pin2 = ['./images/pin2-image1.png', './images/pin2-image2.png', './images/pin2-image3.png'];
+        const pin2 = ['./images/pin2-image1.png', './images/pin2-image2.png', './images/pin2-image3.png', './images/pin2-image4.png', './images/pin2-image5.png', './images/pin2-image6.png', './images/pin2-image7.png', './images/pin2-image8.png', './images/pin2-image9.png', './images/pin2-image10.png'];
         const nextBtn2 = document.getElementById('next2');
         const prevBtn2 = document.getElementById('prev2');
 
@@ -138,6 +138,84 @@
             }
     
             document.getElementById('gettingTh2').src = pin2[currentpic2];
+        });
+
+        let currentpic3 = 0;
+        const pin3 = ['./images/pin3-image1.png', './images/pin3-image2.png','./images/pin3-image3.png','./images/pin3-image4.png','./images/pin3-image5.png',];
+        const nextBtn3 = document.getElementById('next3');
+        const prevBtn3 = document.getElementById('prev3');
+
+        nextBtn3.addEventListener('click', function(e){
+            e.preventDefault();
+
+            currentpic3++;
+            if(currentpic3 > pin3.length - 1){
+                currentpic3 = 0;
+            }
+            document.getElementById('gettingTh3').src = pin3[currentpic3];
+        })
+
+        prevBtn3.addEventListener('click', function(e){
+            e.preventDefault();
+    
+            currentpic3--;
+            if (currentpic3 < 0){
+                 currentpic3 = pin3.length - 1; 
+            }
+    
+            document.getElementById('gettingTh3').src = pin3[currentpic3];
+        });
+
+        let currentpic4 = 0;
+        const pin4 = ['./images/pin4-image1.png', './images/pin4-image2.png', './images/pin4-image3.png', './images/pin4-image4.png', './images/pin4-image5.png', './images/pin4-image6.png', './images/pin4-image7.png', './images/pin4-image8.png', './images/pin4-image9.png', './images/pin4-image10.png', './images/pin4-image11.png', './images/pin4-image12.png', './images/pin4-image13.png',];
+        const nextBtn4 = document.getElementById('next4');
+        const prevBtn4 = document.getElementById('prev4');
+
+        nextBtn4.addEventListener('click', function(e){
+            e.preventDefault();
+
+            currentpic4++;
+            if(currentpic4 > pin4.length - 1){
+                currentpic4 = 0;
+            }
+            document.getElementById('gettingTh4').src = pin4[currentpic4];
+        })
+
+        prevBtn4.addEventListener('click', function(e){
+            e.preventDefault();
+    
+            currentpic4--;
+            if (currentpic4 < 0){
+                 currentpic4 = pin4.length - 1; 
+            }
+    
+            document.getElementById('gettingTh4').src = pin4[currentpic4];
+        });
+
+        let currentpic5 = 0;
+        const pin5 = ['./images/pin5-image1.png', './images/pin5-image2.png', './images/pin5-image3.png', './images/pin5-image4.png', './images/pin5-image5.png'];
+        const nextBtn5 = document.getElementById('next5');
+        const prevBtn5 = document.getElementById('prev5');
+
+        nextBtn5.addEventListener('click', function(e){
+            e.preventDefault();
+
+            currentpic5++;
+            if(currentpic5 > pin5.length - 1){
+                currentpic5 = 0;
+            }
+            document.getElementById('gettingTh5').src = pin5[currentpic5];
+        })
+
+        prevBtn5.addEventListener('click', function(e){
+            e.preventDefault();
+    
+            currentpic5--;
+            if (currentpic5 < 0){
+                 currentpic5 = pin5.length - 1; 
+            }
+    
+            document.getElementById('gettingTh5').src = pin5[currentpic5];
         });
            
 }());
