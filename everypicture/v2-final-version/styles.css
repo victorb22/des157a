@@ -5,15 +5,18 @@ body {
 
 #title{
     font-family: 'Luxurious Script', 'serif';
-    font-size: 5em;
+    font-size: 7em;
     padding-top: 50px;
     color: #666;
 }
 
 #subtitle{
     padding:30px;
+    padding-bottom: 40px;
     font-family: 'Playfair Display', 'serif';
     color: black;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 p{
