@@ -19,6 +19,8 @@
         event.preventDefault();
         const thisCorner = event.target.id;
         console.log(thisCorner);
+        window.scrollTo({ top: 250, behavior: "smooth" });
+
         switch (thisCorner){
             case 'topl': open.className = 'showing'; break;
             case 'topr': open2.className = 'showing'; break;
@@ -193,7 +195,7 @@
         });
 
         let currentpic5 = 0;
-        const pin5 = ['./images/pin5-image1.png', './images/pin5-image2.png', './images/pin5-image3.png', './images/pin5-image4.png', './images/pin5-image5.png'];
+        const pin5 = ['./images/pin5-image1.png', './images/pin5-image2.png', './images/pin5-image3.png', './images/pin5-image4.png', './images/pin5-image5.png', './images/pin5-image6.png'];
         const nextBtn5 = document.getElementById('next5');
         const prevBtn5 = document.getElementById('prev5');
 
