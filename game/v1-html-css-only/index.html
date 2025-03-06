@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V1 Game Design</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>RACE TO HYDRATE!</h1>
+    <!-- ? icon for overlay of instructions -->
+
+    <section id="game">
+        <div>
+            <img src="images/fish-left.svg" alt="fish 1" width="100" height="100" id="fish-left">
+            <!-- The divs inside the healthbar0 and healthbar1 divs are set to position
+            absolute and have a width of 100%. As the game progresses their width is changed to 
+            represent the percentage of health they have left. They have 0 and 1 at the end so that
+            they can be easily targeted by JS based on the index value which is either 0 or 1 -->
+            <div class="health">
+                <div id="healthbar0"><div></div></div>
+            </div>
+            <h2>PLAYER 1</h2>
+        </div>
+        <div>
+            <img src="images/fish-right.svg" alt="fish 1" width="100" height="100" id="fish-right">
+            <div class="health">
+                <div id="healthbar1"><div></div></div>
+            </div>
+            <h2>PLAYER 2</h2>
+        </div>
+    </section>
+
+    <section id="gamecontrol">
+        <h2>Start a Game</h2>
+        <button id="startgame">Click to Start</button>
+    </div>
+
+    <div id="actions"></div>
+    <div id="score"></div>
+
+</body>
+</html>
