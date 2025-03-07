@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+p{
+    font-family: 'Poppins', 'sans-serif';
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+
 body{
     padding: 20px;
     background-image: url(./images/backg.png);
@@ -30,6 +36,7 @@ button{
     background: #0B1984;
     color: white;
     padding: 15px 30px 15px 30px;
+    margin-top: 25px;
     font-family: 'Poppins', 'sans-serif';
 }
 
@@ -53,23 +60,6 @@ button:hover{
     gap: 15px;
 }
 
-/* #healthbar0, #healthbar1 {
-    height: 75%;
-    width: 300px;
-    border: 2px solid #858585;
-    position: relative;
-    overflow: hidden;
-} */
-
-/* #healthbar0 div, #healthbar1 div{
-    height: 100%;
-    width: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg, #0877f5 0%, #60a8fb 50%, #88bcf7 100%);
-} */
-
 #healthbar0, #healthbar1 {
     height: 300px;
     width: 225px; 
@@ -79,7 +69,7 @@ button:hover{
 }
 
 #healthbar0 div, #healthbar1 div {
-    height: 100%;
+    height: 0%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -107,6 +97,16 @@ button:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: -350px; 
+    margin-top: -400px;
 }
+
+#actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -20px;
+}
+
 
