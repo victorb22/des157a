@@ -56,39 +56,39 @@
     };
 
         // will determine which hotspot div you mouse over
-        let thisSpot;
-        let movingMouse;
+        // let thisSpot;
+        // let movingMouse;
     
-        function zoomPhoto(event) {
-            thisSpot = event.target.id;
-            console.log(`zooming into ${thisSpot}`);
-            switch (thisSpot) {
-                case 'topl': pic.className = 'topl'; break;
-                case 'topr': pic.className = 'topr'; break;
-                case 'botl': pic.className = 'botl'; break;
-                case 'botr': pic.className = 'botr'; break;
-                case 'center': pic.className = 'center'; break;
-            }
-        }
+        // function zoomPhoto(event) {
+        //     thisSpot = event.target.id;
+        //     console.log(`zooming into ${thisSpot}`);
+        //     switch (thisSpot) {
+        //         case 'topl': pic.className = 'topl'; break;
+        //         case 'topr': pic.className = 'topr'; break;
+        //         case 'botl': pic.className = 'botl'; break;
+        //         case 'botr': pic.className = 'botr'; break;
+        //         case 'center': pic.className = 'center'; break;
+        //     }
+        // }
     
-        spots.forEach(function (eachSpot) {
-            eachSpot.addEventListener('mouseover', zoomPhoto);
+        // spots.forEach(function (eachSpot) {
+        //     eachSpot.addEventListener('mouseover', zoomPhoto);
             
-            eachSpot.addEventListener('mouseout', function () {
-                thisSpot = 'out';
-                console.log(thisSpot);
-            });
-        });
+        //     eachSpot.addEventListener('mouseout', function () {
+        //         thisSpot = 'out';
+        //         console.log(thisSpot);
+        //     });
+        // });
     
-        document.addEventListener('mousemove', function(){
-            clearTimeout(movingMouse);
-            if(thisSpot == 'out'){
-                movingMouse = setTimeout(function(){
-                    pic.className = 'start';
-                    console.log('zooming out!');
-                }, 1000);
-            }
-        });
+        // document.addEventListener('mousemove', function(){
+        //     clearTimeout(movingMouse);
+        //     if(thisSpot == 'out'){
+        //         movingMouse = setTimeout(function(){
+        //             pic.className = 'start';
+        //             console.log('zooming out!');
+        //         }, 1000);
+        //     }
+        // });
         
         let currentpic = 0;
         const pin1 = ['./images/pin1-image1.png', './images/pin1-image2.png', './images/pin1-image3.png', './images/pin1-image4.png', './images/pin1-image5.png'];
