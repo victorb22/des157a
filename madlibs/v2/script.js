@@ -65,7 +65,7 @@
             <p><span>${greeting}</span> <span>${name}</span>,</p>
             <p> I’m so sorry, but I won’t be able to make it today! I was just making 
                 my way out when my <span>${noun}</span> began to break down. Luckily, I was close. But 
-                to make matters worse, as I was in the middle of <span>${verb}</span> my way inside, 
+                to make matters worse, I was in the middle of <span>${verb}</span> my way inside, 
                 when <span>${number}</span> <span>${plnoun}</span> attacked me! I just managed to escape, but I promise I 
                 will make it next time and hope we can reschedule!</p>
             <p> <span>${farewell}</span>, <span>${urname}</span></p>`;
