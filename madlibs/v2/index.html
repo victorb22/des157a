@@ -3,135 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MadLibs V1</title>
+    <title>Every Picture Project</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <main>
-    <section id="input">
-        <article id="title">
-            <svg id="qmark1" xmlns="http://www.w3.org/2000/svg" width="220" height="322" viewBox="0 0 220 322" fill="none">
-                <path d="M134.445 214.593H86.3671C87.3532 189.123 94.6126 172.162 103.762 160.247C113.679 147.332 126.189 139.83 137.034 133.911C145.271 129.784 151.872 125.459 156.496 120.836C162.895 114.436 164.753 106.749 164.753 100.343C164.753 94.2111 163.07 88.8903 161.704 86.0802C154.829 70.1755 138.824 54.593 110.253 54.593C87.0812 54.593 72.8169 65.2336 64.5656 77.1839C59.0674 85.1467 56.2534 93.6458 55.0326 99.8439L7.12034 93.4556C10.0779 77.9901 18.0891 57.7803 32.7926 40.7662C49.2688 21.7008 74.1658 6.59302 110.253 6.59302C154.037 6.59302 191.722 31.3207 206.714 66.8988C219.891 98.9229 214.095 132.266 192.01 154.35C184.453 161.908 175.776 166.938 167.164 171.93C165.185 173.078 163.209 174.223 161.251 175.397C151.852 180.63 144.86 186.253 140.358 193.756C136.716 199.826 134.984 206.658 134.445 214.593ZM144.254 280.729C144.357 285.256 143.554 289.759 141.892 293.972C140.23 298.185 137.744 302.024 134.578 305.263C131.412 308.501 127.632 311.075 123.458 312.833C119.284 314.59 114.801 315.496 110.272 315.497C105.743 315.498 101.259 314.595 97.0844 312.839C92.9095 311.084 89.1274 308.512 85.9602 305.275C82.793 302.038 80.3044 298.2 78.6406 293.988C76.9768 289.776 76.1713 285.273 76.2715 280.746C76.4679 271.862 80.1343 263.408 86.4857 257.194C92.8372 250.98 101.369 247.5 110.255 247.497C119.14 247.495 127.674 250.972 134.028 257.182C140.383 263.393 144.054 271.845 144.254 280.729Z" fill="#F06" stroke="white" stroke-width="12"/>
-              </svg>
-            <h1>RAND - M</h1>
-            <h1>EXCUSE</h1>
-            <h1>LIBS</h1>
+    <section id="home">
+        <article id="container">
+                <img src="./images/mx-map2.png" alt="mexico map">
+                <div id="topl"></div>
+                <div id="topr"></div>
+                <div id="botl"></div>
+                <div id="botr"></div>
+                <div id="center"></div>
         </article>
-        <article id="form">
-            <h2>Enter Sections Below</h2>
-            <form>
-                <div class="fixform">
-                    <div class="fixlabel">
-                    <label for="greeting">Greeting</label>
-                    <select id="greeting">
-                        <option value="sel">Select</option>
-                        <option value="dear">Dear</option>
-                        <option value="hello">Hello</option>
-                        <option value="esteemed">Esteemed</option>
-                        <option value="greetings">Greetings</option>
-                        <option value="yo">Yo</option>
-                        <option value="whatsUp">What's Up</option>
-                        <option value="hi">Hi</option>
-                        <option value="howdy">Howdy</option>
-                    </select>
-                    </div>
 
-                    <div class="fixlabel">
-                    <label for="name">Excuse Recipient:</label>
-                    <input type="text" id="name" placeholder="">
-                    </div>
-                </div>
+        <header>
+            <h1>Mi Mexico Lindo</h1>
+            <h2>Start with the uppermost pink pin and click on each one to explore my journey to Mexico, where I met my mom's side of the family for the first time.</h2>
+        </header>
+    </section>
 
-                <div class="fixform">
-                    <div class="fixlabel">
-                    <label for="noun">Noun:</label>
-                    <input type="text" id="noun" placeholder="">
-                    </div>
-                    <div class="fixlabel">
-                    <label for="verb">Verb Ending in -ing:</label>
-                    <input type="text" id="verb" placeholder="">
-                    </div>
-                </div>
-
-                <fieldset id="number">
-                    <legend>Choose A Number</legend>
-                    <div id="circs">
-                    <input type="radio" id="five" name="number" value="five">
-                    <label for="five">5</label>
-                    </div>
-                    <div id="circs">
-                    <input type="radio" id="fifty" name="number" value="fifty">
-                    <label for="fifty">50</label>
-                    </div>
-                    <div id="circs">
-                    <input type="radio" id="500" name="number" value="500">
-                    <label for="500">500</label>
-                    </div>
-                </fieldset>
-
-            <div class="fixform">
-                <div class="fixlabel">
-                <label for="plnoun">Plural Noun:</label>
-                <input type="text" id="plnoun" placeholder="">
-                </div>
-                <div class="fixlabel">
-                <label for="urname">Your Name:</label>
-                <input type="text" id="urname" placeholder="">
-                </div>
+    <section id="open" class="hidden">
+        <h2>Getting There</h2>
+        <article>
+            <p class="nav" id="nav1"><a href="#" id="prev">&lt;</a></p>        
+            <div id="pixs">
+                <img src="./images/pin1-image1.png" alt="getting there slideshow" id="gettingTh" width="300" height="350">
             </div>
-                <label for="farewell">Farewell</label>
-                <select id="farewell">
-                    <option value="sel">Select</option>
-                    <option value="sincerely">Sincerely</option>
-                    <option value="best">Best Regards</option>
-                    <option value="respectfully">Respectfully</option>
-                    <option value="adios">Adios</option>
-                    <option value="bye">Bye</option>
-                    <option value="peace">Peace</option>
-                    <option value="seeya">See Ya</option>
-                </select>
-
-                <input type="submit" value="Excuse Me!">
-            </form>
+            <p class="nav" id="nav1"><a href="#" id="next">&gt;</a>
+            
+            <p>
+                Before going on this trip, a small background on my family, specifically my mom's side. Her and my dad came to the U.S. from Mexico in 2001. Luckily for my dad, all of his siblings already lived in the same city in the East Bay called
+                Concord. I grew up in California and didn't get to know my mom's side of the family as they all lived in Mexico. I got the opportunity to go to Mexico last year and meet some of my uncles, my grandma, and cousins for the first time. Unfortunately my grandpa
+                passed away when I was about four, but I’m often told that I have hair similar to his since curly hair runs in my family. Here are a few photos of him, my mom, and her family. The following pins are from my trip to my grandpa's house in the town of El Rincon, Jalisco. As well as, a day trip we took to two nearby cities, Mazamitla and Zapotlan.</p>
+            <button id="close1" class="close">&times;</button>
         </article>
     </section>
 
-    <section id="results">
-        <h1>RESULTS</h1>
-        <div id="qmarks">
-        <img id="prof" src="./images/profile.svg" alt="profile">
-        <svg id="qmark2" xmlns="http://www.w3.org/2000/svg" width="220" height="322" viewBox="0 0 220 322" fill="none">
-            <path d="M134.445 214.593H86.3671C87.3532 189.123 94.6126 172.162 103.762 160.247C113.679 147.332 126.189 139.83 137.034 133.911C145.271 129.784 151.872 125.459 156.496 120.836C162.895 114.436 164.753 106.749 164.753 100.343C164.753 94.2111 163.07 88.8903 161.704 86.0802C154.829 70.1755 138.824 54.593 110.253 54.593C87.0812 54.593 72.8169 65.2336 64.5656 77.1839C59.0674 85.1467 56.2534 93.6458 55.0326 99.8439L7.12034 93.4556C10.0779 77.9901 18.0891 57.7803 32.7926 40.7662C49.2688 21.7008 74.1658 6.59302 110.253 6.59302C154.037 6.59302 191.722 31.3207 206.714 66.8988C219.891 98.9229 214.095 132.266 192.01 154.35C184.453 161.908 175.776 166.938 167.164 171.93C165.185 173.078 163.209 174.223 161.251 175.397C151.852 180.63 144.86 186.253 140.358 193.756C136.716 199.826 134.984 206.658 134.445 214.593ZM144.254 280.729C144.357 285.256 143.554 289.759 141.892 293.972C140.23 298.185 137.744 302.024 134.578 305.263C131.412 308.501 127.632 311.075 123.458 312.833C119.284 314.59 114.801 315.496 110.272 315.497C105.743 315.498 101.259 314.595 97.0844 312.839C92.9095 311.084 89.1274 308.512 85.9602 305.275C82.793 302.038 80.3044 298.2 78.6406 293.988C76.9768 289.776 76.1713 285.273 76.2715 280.746C76.4679 271.862 80.1343 263.408 86.4857 257.194C92.8372 250.98 101.369 247.5 110.255 247.497C119.14 247.495 127.674 250.972 134.028 257.182C140.383 263.393 144.054 271.845 144.254 280.729Z" fill="#F06" stroke="white" stroke-width="12"/>
-          </svg>
-          <svg id="qmark3" xmlns="http://www.w3.org/2000/svg" width="220" height="322" viewBox="0 0 220 322" fill="none">
-            <path d="M134.445 214.593H86.3671C87.3532 189.123 94.6126 172.162 103.762 160.247C113.679 147.332 126.189 139.83 137.034 133.911C145.271 129.784 151.872 125.459 156.496 120.836C162.895 114.436 164.753 106.749 164.753 100.343C164.753 94.2111 163.07 88.8903 161.704 86.0802C154.829 70.1755 138.824 54.593 110.253 54.593C87.0812 54.593 72.8169 65.2336 64.5656 77.1839C59.0674 85.1467 56.2534 93.6458 55.0326 99.8439L7.12034 93.4556C10.0779 77.9901 18.0891 57.7803 32.7926 40.7662C49.2688 21.7008 74.1658 6.59302 110.253 6.59302C154.037 6.59302 191.722 31.3207 206.714 66.8988C219.891 98.9229 214.095 132.266 192.01 154.35C184.453 161.908 175.776 166.938 167.164 171.93C165.185 173.078 163.209 174.223 161.251 175.397C151.852 180.63 144.86 186.253 140.358 193.756C136.716 199.826 134.984 206.658 134.445 214.593ZM144.254 280.729C144.357 285.256 143.554 289.759 141.892 293.972C140.23 298.185 137.744 302.024 134.578 305.263C131.412 308.501 127.632 311.075 123.458 312.833C119.284 314.59 114.801 315.496 110.272 315.497C105.743 315.498 101.259 314.595 97.0844 312.839C92.9095 311.084 89.1274 308.512 85.9602 305.275C82.793 302.038 80.3044 298.2 78.6406 293.988C76.9768 289.776 76.1713 285.273 76.2715 280.746C76.4679 271.862 80.1343 263.408 86.4857 257.194C92.8372 250.98 101.369 247.5 110.255 247.497C119.14 247.495 127.674 250.972 134.028 257.182C140.383 263.393 144.054 271.845 144.254 280.729Z" fill="white" stroke="#F06" stroke-width="12"/>
-          </svg>
+    <section id="open2" class="hidden">
+        <h2>Around El Rincon, Jalisco</h2>
+        <article>
+        <p class="nav" id="nav2"><a href="#" id="prev2">&lt;</a></p>        
+        <div id="pixs">
+            <img src="./images/pin2-image1.png" alt="around el rincon slideshow" id="gettingTh2" width="300" height="350">
         </div>
+        <p class="nav" id="nav2"><a href="#" id="next2">&gt;</a>
 
-        <article id="output">
-        <!-- <p><span>greetings</span> <span>Name</span>,</p>
-        <p> I’m so sorry, but I won’t be able to make it today! I was just making 
-            my way out when my <span>noun</span> began to break down. Luckily, I was close. But 
-            to make matters worse, as I was in the middle of <span>verb</span> my way inside, 
-            when <span>num</span> <span>plnoun</span> attacked me! I just managed to escape, but I promise I 
-            will make it next time and hope we can reschedule!</p>
-        <p> <span>farewell</span>, <span>name</span></p> -->
+        <p>
+            These are pictures from the town my family comes from and where we were staying. While there, I captured
+            images of things I saw and often encountered. Such as going to go drink fresh cow's milk every morning,
+            dogs out in the streets, going out with my cousins, using the bus to move around, and experiencing how the entire 
+            town gathers to celebrate and parade for Holy Week.  
+        </p>
+
+        <button id="close2" class="close">&times;</button>
         </article>
     </section>
-    </main>  
 
-    <footer>
+    <section id="open3" class="hidden">
+        <h2>Grandpa's House</h2>
+        <article>
+        <p class="nav" id="nav3"><a href="#" id="prev3">&lt;</a></p>        
+        <div id="pixs">
+            <img src="./images/pin3-image1.png" alt="Grandpa's House" id="gettingTh3" width="300" height="350">
+        </div>
+        <p class="nav" id="nav3"><a href="#" id="next3">&gt;</a>
 
-    </footer>
+        <p>
+            During my trip, we stayed at my grandpa's house that he left his family behind in El Rincon, Jalisco. My mom was born in Apatzingan, Michoacan and raised there in their primary family home; since my grandpa owned a welding shop in that town that my uncles now own.
+            And so this second house served as a vacation home to my mom's family growing up as they would come visit family we also have in El Rincon. It's also where my dad was born and raised and actually met my mom during one of her family visits.
+            Luckily, it's a fairly large house and I was able to stay there with a few of my aunts, cousins, and grandma. In Mexico, it is common for people to 
+            stay up late and spend time with family. Every night we played a Mexican card game called 'Loteria' and accompanied it with coffee, chatting, and 
+            late night snacks that we would often get from corner stores or food vendors that would sell in the town's center plaza. That is the first image, we would gather around the dinner table to hangout and chat every night. This is one of the biggest things I miss about Mexico, and being in a small pueblo like El Rincon. The other pictures
+            are from the outside of the house. Some of them are of me and my cousins, uncle, mom and grandma; and the others are of my mom and her family.
+        </p>
+
+        <button id="close3" class="close">&times;</button>
+        </article>
+    </section>
+
+    <section id="open4" class="hidden">
+        <h2>Mazamitla and Zapotlan, Jalisco</h2>
+        <article>
+        <p class="nav" id="nav4"><a href="#" id="prev4">&lt;</a></p>        
+        <div>
+            <img src="./images/pin4-image1.png" alt="Towns in Jalisco" id="gettingTh4" width="300" height="350">
+        </div>
+        <p class="nav" id="nav4"><a href="#" id="next4">&gt;</a>
+
+        <p>
+            About an hour from where we were staying in El Rincon was another town called Mazamitla. The name derives from Nahuatl language
+            and is a combination of words meaning "deer" and "place". That's why there are deer related items around the town and in the pictures. Zapotlan
+            was another town we stopped at on the way home that is about 20 minutes from El Rincon. It is a larger, more urban town that has a lot of nice architecture and stores to shop at. The first and last 3 images are taken from Zapotlan.
+        </p>
+
+        <button id="close4" class="close">&times;</button>
+        </article>
+    </section>
+
+    <section id="open5" class="hidden">
+        <h2>Dad's Parcela</h2>
+        <article>
+        <p class="nav" id="nav5"><a href="#" id="prev5">&lt;</a></p>        
+        <div>
+            <img src="./images/pin5-image1.png" alt="Dad's Land in MX" id="gettingTh5" width="300" height="350">
+        </div>
+        <p class="nav" id="nav5"><a href="#" id="next5">&gt;</a>
+
+        <p>
+            A 'parcela' is plot or plot of land in Spanish, and my dad left one behind before leaving to the U.S. My uncle who 
+            visits regularly and also has a house nearby takes care of the land and a few animals he has there for himself. The pictures I 
+            took are of the path leading to there that I walked with my uncle, some crops that are nearby, a coconut tree I passed, and some 
+            pictures of the land. It's a pretty big piece of land at the base of a large mountain and surrounded by natural environment. I enjoyed
+            visiting it and hope to help my dad do something with it someday.  
+        </p>
+
+        <button id="close5" class="close">&times;</button>
+        </article>
+    </section>
 </body>
 </html>
