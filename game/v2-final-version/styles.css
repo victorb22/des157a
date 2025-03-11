@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Poppins', 'sans-serif';
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+
+body{
+    padding: 20px;
+    background-image: url(./images/backg.png);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lilita One', 'sans-serif';
+    font-size: 4em;
+    color: #0B1984;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Lilita One', 'sans-serif';
+    color: #0B1984;
+}
+
+button{
+    border-radius: 30px;
+    background: #0B1984;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    margin: auto;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+button:hover{
+    cursor: pointer;
+    background: #0877f5;
+    color: white;
+}
+
+#game {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    max-width: 1500px;
+    margin: 0 auto 50px auto;
+}
+
+.health {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#healthbar0, #healthbar1 {
+    height: 300px;
+    width: 225px; 
+    border: 2px solid #858585;
+    background-color: #ececec;
+    position: relative;
+    overflow: hidden;
+}
+
+#healthbar0 div, #healthbar1 div {
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, #8fc1fa 0%, #60a8fb 50%, #0877f5 100%);
+}
+
+#fish-left{
+    position: relative;
+    z-index: 1000;
+    top: 50%;
+    left: 25%;
+}
+
+#fish-right{
+    position: relative;
+    z-index: 1000;
+    top: 50%;
+    left: 25%;
+}
+
+#gamecontrol{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    margin-top: -445px;
+    padding: 20px;
+}
+
+#gamecontrol h2{
+    color: #60a8fb;
+}
+
+#actions{
+    /* gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: -20px; */
+    padding: 20px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#score{
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: -20px; */
+}
+
+
