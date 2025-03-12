@@ -10,6 +10,7 @@
     const overlay = document.querySelector('#overlay');
     const close = document.querySelector('#closeQ');
     const body = document.querySelector('body');
+    const fishClick = new Audio('audio/fish-click.mp3');
     const gameData = {
         dice: ['1die.png', '2die.png', '3die.png', 
                '4die.png', '5die.png', '6die.png'],
@@ -23,16 +24,19 @@
     };
 
     qmark.addEventListener('click', function(){
+        fishClick.play();
         overlay.className = 'showing';
         body.className = 'bg';
     })
 
     close.addEventListener('click', function(){
+        fishClick.play();
         overlay.className = 'hidden';
         body.className = 'showing';
     })
 
     startGame.addEventListener('click', function(){
+        fishClick.play();
         // randomly set the gameData.index here, which will choose the player
         gameData.index = Math.round(Math.random());
         // console.log(gameData.index);
@@ -55,7 +59,6 @@
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
         document.querySelector('#roll').addEventListener('click', function(){
             throwDice();
-
             // console.log('roll the dice!');
         })
         // console.log('setting up turn');
@@ -94,6 +97,8 @@
         
                 // if neither dice is a 1
                 else {
+                    const waterSound = new Audio('audio/water.mp3');
+                    waterSound.play();
                     document.querySelector(`#healthbar${gameData.index} div`).style.height = `${gameData.rollSum + gameData.score[gameData.index]}%`;                    
                     gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
                     actionArea.innerHTML = '<button id="rollagain">Roll Again</button> <p id="or">OR</p> <button id="pass">Pass</button>';
