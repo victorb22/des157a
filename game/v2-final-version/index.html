@@ -21,7 +21,7 @@
 
     <section id="game">
         <div>
-            <img src="images/fish-left.svg" alt="fish 1" width="100" height="100" id="fish-left">
+            <img src="images/fish-left.svg" alt="fish 1" width="100" height="100" id="fish0" class="fish">
             <!-- The divs inside the healthbar0 and healthbar1 divs are set to position
             absolute and have a width of 100%. As the game progresses their width is changed to 
             represent the percentage of health they have left. They have 0 and 1 at the end so that
@@ -32,7 +32,7 @@
             <h2>PLAYER 1</h2>
         </div>
         <div>
-            <img src="images/fish-right.svg" alt="fish 1" width="100" height="100" id="fish-right">
+            <img src="images/fish-right.svg" alt="fish 1" width="100" height="100" id="fish1" class="fish">
             <div class="health">
                 <div id="healthbar1"><div></div></div>
             </div>
@@ -42,7 +42,19 @@
 
     <section id="gamecontrol">
         <h2>Start a Game</h2>
+        <img id="qmark" src="images/qover.svg" alt="Instructions" width="30px" height="30px"><br>
         <button id="startgame">Click to Start</button>
+    </section>
+
+    <section id="overlay" class="hidden">
+        <h2>How To Play</h2>
+        <p>Two players compete to fill their cup by rolling dice and reaching 100 points.</p>
+        <ul>
+          <li>Each turn, roll the die to earn points.</li>
+          <li>Roll as many times as you like, but rolling a 1 loses your turn, and rolling two 1's loses your entire score.</li>          <li>Choose to “Hold” to save your points and pass the turn.</li>
+          <li>The first player to reach 100 points saves their fish, click start to begin the race!</li>
+        </ul>
+        <button id="closeQ">Got it!</button>
     </section>
     
     <div id="actions"></div>

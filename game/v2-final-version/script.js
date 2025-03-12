@@ -2,31 +2,20 @@
     console.log('reading js');
     'use strict';
 
-    const health0 = document.querySelector('#healthbar0 div');
-    const health1 = document.querySelector('#healthbar1 div');
-    const fish1 = document.querySelector('#fish-left');
-    const fish2 = document.querySelector('#fish-right');
     const startGame = document.querySelector('#startgame');
-    const gameControl = document.querySelector('#gamecontrol'); // maybe just use this for die and control instead of game??
-    // const game = document.querySelector('#game');
+    const gameControl = document.querySelector('#gamecontrol');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
-
-    // test - vb ------
-    const game = document.querySelector('#game');
-
-
     const gameData = {
         dice: ['1die.png', '2die.png', '3die.png', 
                '4die.png', '5die.png', '6die.png'],
-        players: ['player 1', 'player 2'],
+        players: ['Player 1', 'Player 2'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
         rollSum: 0,
         index: 0,
         gameEnd: 100
-        // health: [100, 100]
     };
 
     startGame.addEventListener('click', function(){
@@ -66,15 +55,9 @@
         gameControl.innerHTML += `<img src="images/${gameData.dice[gameData.roll1 - 1]}"> <img src ="images/${gameData.dice[gameData.roll2 - 1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
-        // test - vb ------
-        // document.querySelector(`#healthbar${gameData.index} div`).style.height = `${gameData.rollSum}%`;        
-        
-        // console.log(gameData.roll1);
-        // console.log(gameData.roll2);
-
-                // if two 1's are rolled - player loses
+                // if two 1's are rolled - player loses all their points
                 if (gameData.rollSum === 2){
-                    actionArea.innerHTML += '<p>SNAKE EYESSS</p>';
+                    actionArea.innerHTML += '<h2>SNAKE EYESSS</h2>';
                     gameData.score[gameData.index] = 0;
 
                     // test - vb -----
@@ -97,14 +80,17 @@
         
                 // if neither dice is a 1
                 else {
-                    // test - vb -------
-                    document.querySelector(`#healthbar${gameData.index} div`).style.height = `${gameData.rollSum + gameData.score[gameData.index]}%`;        
-
+                    document.querySelector(`#healthbar${gameData.index} div`).style.height = `${gameData.rollSum + gameData.score[gameData.index]}%`;                    
                     gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-                    actionArea.innerHTML = '<button id="rollagain">Roll Again</button> OR <button id="pass">Pass</button>';
+                    actionArea.innerHTML = '<button id="rollagain">Roll Again</button> <p id="or">OR</p> <button id="pass">Pass</button>';
+
+                    const fish = document.querySelector(`#fish${gameData.index}`);
+                    fish.className = 'fish'
+                    setTimeout(function() {
+                        fish.className = 'shakes';
+                    }, 10);
                     
                     document.querySelector('#rollagain').addEventListener('click', function(){
-                        // setupturn(), you could set up the turn again, but can also just throw dice again
                         throwDice();
                     });
         
@@ -120,9 +106,14 @@
     function checkWinningCondition(){
         if (gameData.score[gameData.index] > gameData.gameEnd){
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points</h2>`;
-
+            document.querySelector(`#fish${[gameData.index]}`).className = `shake`;
             gameControl.innerHTML = '';
-            document.querySelector('#quit').innerHTML = 'Start a new game?';
+            actionArea.innerHTML = '<button id="restart">Play Again?</button>';
+            document.querySelector('#restart').addEventListener('click', function(){
+                location.reload();
+            })
+            // gameControl.innerHTML = '';
+            // document.querySelector('#quit').innerHTML = 'Start a new game?';
         } else{
             // show current score>>>
             showCurrentScore();
