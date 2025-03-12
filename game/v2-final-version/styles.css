@@ -80,14 +80,14 @@ button:hover{
 
 #fish0{
     position: relative;
-    z-index: 1000;
+    z-index: 10;
     top: 50%;
     left: 25%;
 }
 
 #fish1{
     position: relative;
-    z-index: 1000;
+    z-index: 10;
     top: 50%;
     left: 25%;
 }
@@ -106,7 +106,38 @@ button:hover{
 
 #qmark{
     margin: 30px;
+    cursor: pointer;
     margin-top: 10px;
+}
+
+#qmark:hover{
+    transform: scale(1.15);
+}
+
+#overlay{
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: auto;
+    padding: 30px;
+    background-color: white;
+    border: 15px solid #0877f5;
+    transform: translate(-50%, -50%);    
+}
+
+ul li{
+    font-family: 'Poppins', 'sans-serif';
+    line-height: 1.6em;
+    padding: 5px;
+}
+
+#closeQ{
+    display: block;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    width: 141px;
 }
 
 .hidden{
@@ -118,13 +149,11 @@ button:hover{
 }
 
 #actions{
-    /* gap: 10px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* margin-top: -20px; */
     padding: 20px;
     font-family: 'Poppins', 'sans-serif';
 }
@@ -134,18 +163,24 @@ button:hover{
 }
 
 #pass{
-    width: 142px;
+    width: 141px;
 }
 
-#score{
-    padding-top: 50px;
+#js-score{
+    margin-top: 100px;
     display: flex;
-    width: 100%;
-    /* flex-direction: column; */
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    /* margin-top: -20px; */
+    gap: 330px;
+}
+
+#js-score h2{
+    font-size: 4em;
+}
+
+#js-score h1{
+    font-size: 2.25em;
+    color: #0877f5;
+    justify-content: center;
 }
 
 .fish{
@@ -156,6 +191,14 @@ button:hover{
     animation: shake 1s ease-in-out 1;
 }
 
+.bg{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.winner {
+    animation: winner 1s ease-in-out 1;
+}
+
 @keyframes shake {
     0% {transform: translateX(0px);}
     20% {transform: translateX(-10px);}
@@ -163,6 +206,15 @@ button:hover{
     60% {transform: translateX(-5px);}
     80% {transform: translateX(5px);}
     100% {transform: translateX(0px);}
+}
+
+@keyframes winner {
+    0% { transform: translateX(0) rotate(0deg); }
+    20% { transform: translateX(-10px) rotate(-5deg); }
+    40% { transform: translateX(10px) rotate(5deg); }
+    60% { transform: translateX(-5px) rotate(-3deg); }
+    80% { transform: translateX(5px) rotate(3deg); }
+    100% { transform: translateX(0) rotate(0deg); }
 }
 
 

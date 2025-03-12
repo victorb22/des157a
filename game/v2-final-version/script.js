@@ -6,6 +6,10 @@
     const gameControl = document.querySelector('#gamecontrol');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
+    const qmark = document.querySelector('#qmark');
+    const overlay = document.querySelector('#overlay');
+    const close = document.querySelector('#closeQ');
+    const body = document.querySelector('body');
     const gameData = {
         dice: ['1die.png', '2die.png', '3die.png', 
                '4die.png', '5die.png', '6die.png'],
@@ -17,6 +21,16 @@
         index: 0,
         gameEnd: 100
     };
+
+    qmark.addEventListener('click', function(){
+        overlay.className = 'showing';
+        body.className = 'bg';
+    })
+
+    close.addEventListener('click', function(){
+        overlay.className = 'hidden';
+        body.className = 'showing';
+    })
 
     startGame.addEventListener('click', function(){
         // randomly set the gameData.index here, which will choose the player
@@ -105,15 +119,17 @@
 
     function checkWinningCondition(){
         if (gameData.score[gameData.index] > gameData.gameEnd){
+            const winner = document.querySelector(`#health${gameData.index}`);
+            winner.className = 'fish';
+            setTimeout(function() {
+                winner.className = 'winner';
+            }, 10);
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points</h2>`;
-            document.querySelector(`#fish${[gameData.index]}`).className = `shake`;
             gameControl.innerHTML = '';
             actionArea.innerHTML = '<button id="restart">Play Again?</button>';
             document.querySelector('#restart').addEventListener('click', function(){
                 location.reload();
-            })
-            // gameControl.innerHTML = '';
-            // document.querySelector('#quit').innerHTML = 'Start a new game?';
+            });
         } else{
             // show current score>>>
             showCurrentScore();
@@ -121,8 +137,7 @@
     };
 
     function showCurrentScore(){
-        score.innerHTML = `<p>SCORE<strong>${gameData.players[0]}:
-        ${gameData.score[0]}</strong> and <strong>${gameData.players[1]}: 
-        ${gameData.score[1]}</strong></p>`;
+
+        score.innerHTML = `<section id="js-score"><h2>${gameData.score[0]}</h2><h1>SCORE</h1><h2>${gameData.score[1]}</h2></section>`
     };
 }());
