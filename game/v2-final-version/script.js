@@ -123,7 +123,7 @@
     };
 
     function checkWinningCondition(){
-        if (gameData.score[gameData.index] > gameData.gameEnd){
+        if (gameData.score[gameData.index] >= gameData.gameEnd){
             const winner = document.querySelector(`#health${gameData.index}`);
             winner.className = 'fish';
             setTimeout(function() {
